@@ -252,7 +252,7 @@ const Appointment = () => {
             <button className='bg-[#528EFF] text-white text-m font-bold px-7 py-3 rounded-full my-6' onClick={bookAppointment}>
               Book Now
             </button>
-            <button className='bg-[#BDD4FF] text-white text-m font-bold px-7 py-3 rounded-full my-6' onClick={() => navigate('/')}>
+            <button className='bg-[#BDD4FF] text-black text-m px-7 py-3 rounded-full my-6' onClick={() => navigate('/')}>
               Back
             </button>
           </div>
