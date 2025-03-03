@@ -217,61 +217,30 @@ const Appointment = () => {
             <img className='w-60 h-60 object-cover bg-blue-50 rounded-lg'
                  src={`http://localhost:8085/picture/${barbers.profilePicture}`} alt="" />
           </div>
-          <div className='flex-1 border border-gray-400 rounded-lg p-8 py-7 bg-white mx-2 sm:mx-0 mt-[-0px] sm:mx-0'>
-            <p className='flex items-center gap-2 text-2xl font-medium text-gray-900'>
+          <div className='flex-1 border border-gray-400 rounded-lg p-8 py-7 bg-[#7A98AB] mx-2 sm:mx-0 mt-[-0px] sm:mx-0'>
+            <p className='flex items-center gap-2 text-2xl font-medium text-white'>
               {barbers.name}
               <img className='w-5' src={assets.verified_icon} alt="" />
             </p>
-            <div className='flex items-center gap-2 text-sm mt-1 text-gray-600'>
-              <p>{barbers.gender}</p>
-              <button className='py-0.5 px-2 border text-xs rounded-full'>{barbers.experience+" years"}</button>
-            </div>
-            <div>
-              <p className='flex items-center gap-1 text-sm font-medium text-gray-900 mt-3'>
-                About <img src={assets.info_icon} alt="" />
-              </p>
-              <p className='text-sm text-gray-500 max-w-[700px] mt-1'>{barbers.about}</p>
-            </div>
-            <p className='text-gray-500 font-medium mt-4'>
-              Price: <span className='text-gray-600'>{price} baht</span>{/*docInfo.fees*/}
+            <p className='text-white font-medium mt-4'>
+              About: <span className='text-white'>{price} baht</span>{/*docInfo.fees*/}
+            </p>
+            <p className='text-white font-medium mt-4'>
+              Location: <span className='text-white'>{price} baht</span>{/*docInfo.fees*/}
+            </p>
+            <p className='text-white font-medium mt-4'>
+              Price: <span className='text-white'>{price} baht</span>{/*docInfo.fees*/}
             </p>
           </div>
         </div>
-        {/*-------offfer Slots-------*/}
-        <div className=' mt-[4%]  sm:pl-4 font-medium text-gray-700'>
-          <p>Special offers</p>
-          <div
-              className={`bg-white border border-gray-300 p-4 rounded-lg shadow-md w-60 text-center cursor-pointer hover:bg-gray-100 mt-4 ${selectedOffer === "Regular Haircut" ? 'bg-gray-200' : ''}`}
-              onClick={() => handleSelectService('Regular Haircut', '300')}
-          >
-            <p className="text-xl font-semibold text-gray-700">Regular Haircut</p>
-          </div>
-          <div
-              className={`bg-white border border-gray-300 p-4 rounded-lg shadow-md w-60 text-center cursor-pointer hover:bg-gray-100 mt-3 ${selectedOffer === "Haircut + Beard" ? 'bg-gray-200' : ''}`}
-              onClick={() => handleSelectService('Haircut + Beard', '350')}
-          >
-            <p className="text-xl font-semibold text-gray-700">Haircut + Beard</p>
-          </div>
-          <div
-              className={`bg-white border border-gray-300 p-4 rounded-lg shadow-md w-60 text-center cursor-pointer hover:bg-gray-100 mt-3 ${selectedOffer === "Haircut + Shampoo" ? 'bg-gray-200' : ''}`}
-              onClick={() => handleSelectService('Haircut + Shampoo', '400')}
-          >
-            <p className="text-xl font-semibold text-gray-700">Haircut + Shampoo</p>
-          </div>
-          <div
-              className={`bg-white border border-gray-300 p-4 rounded-lg shadow-md w-60 text-center cursor-pointer hover:bg-gray-100 mt-3 ${selectedOffer === "All" ? 'bg-gray-200' : ''}`}
-              onClick={() => handleSelectService('All', '450')}
-          >
-            <p className="text-xl font-semibold text-gray-700">All</p>
-          </div>
-        </div>
+        
 
         {/*-------Booking Slots-------*/}
-        <div className="ml-[25%] mt-[-24%] mt-4 font-medium text-gray-700">
-          <p>Booking slots</p>
+        <div className="ml-[30%] mt-[4%] mt-4 font-medium text-white">
+          <p font-bold>Booking slots</p>
           <div className='flex gap-3 items-center w-full overflow-x-scroll mt-4'>
             {docSlots.length > 0 && docSlots.map((item, index) => (
-                <div onClick={() => setSlotIndex(index)} className={`text-center py-6 min-w-16 rounded-full cursor-pointer ${slotIndex === index ? 'bg-primary text-white' : 'border border-gray-200'}`} key={index}>
+                <div onClick={() => setSlotIndex(index)} className={`text-center py-5 min-w-16 rounded-full cursor-pointer ${slotIndex === index ? 'bg-white text-black font-bold' : 'bg-[#7A98AB]'}`} key={index}>
                   <p>{item[0] && daysOfWeek[item[0].dateTime.getDay()]}</p>
                   <p>{item[0] && item[0].dateTime.getDate()}</p>
                 </div>
@@ -291,9 +260,14 @@ const Appointment = () => {
                 </p>
             ))}
           </div>
-          <button className='bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6' onClick={bookAppointment}>
+          <div className='flex items-center gap-5 w-full overflow-x-scroll mt-4'>
+          <button className='bg-[#528EFF] text-white text-m font-bold px-7 py-3 rounded-full my-6' onClick={bookAppointment}>
             Book an Appointment
           </button>
+          <button className='bg-[#BDD4FF] text-white text-m font-bold px-7 py-3 rounded-full my-6'>
+            Back
+          </button>
+          </div>
 
         </div>
         {/*-------Listing Barbers-------*/}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { assets } from '../assets/assets';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { HiHome } from 'react-icons/hi';
 
 const NavbarSub = () => {
     const navigate = useNavigate();
@@ -28,23 +29,23 @@ const NavbarSub = () => {
     };
 
     return (
-        <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
-            <p onClick={() => navigate('/')} className='w-44 cursor-pointer text-5xl font-semibold text-[#000b6d]'>Xylaz :)</p>
-            <ul className='hidden md:flex items-start gap-5 font-medium'>
+        <div className='flex items-center justify-between text-sm py-4 mb-5'>
+            <p onClick={() => navigate('/')} className='w-44 cursor-pointer text-5xl font-semibold text-white flex items-center gap-2'>Homie <HiHome size={40} color="white" /></p>
+            <ul className='hidden md:flex items-start gap-10 font-medium'>
                 <NavLink to='/'>
-                    <li className='py-1'>HOME</li>
+                    <li className='py-1 font-bold'>HOME</li>
                     <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
                 </NavLink>
                 <NavLink to='/'>
-                    <li className='py-1'>ALL BARBERS</li>
+                    <li className='py-1 font-bold'>OUR HOUSES</li>
                     <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
                 </NavLink>
                 <NavLink to='/'>
-                    <li className='py-1'>ABOUT</li>
+                    <li className='py-1 font-bold'>ABOUT US</li>
                     <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
                 </NavLink>
                 <NavLink to='/'>
-                    <li className='py-1'>CONTACT</li>
+                    <li className='py-1 font-bold'>CONTACT</li>
                     <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
                 </NavLink>
             </ul>
@@ -62,7 +63,7 @@ const NavbarSub = () => {
                                 </div>
                             </div>
                         </div>
-                        : <button onClick={() => navigate('/signin')} className='bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block'>Login</button>
+                        : <button onClick={() => navigate('/signin')} className='bg-[#7A98AB] text-white px-8 py-3 rounded-full font-bold hidden md:block'>Login</button>
                 }
                 <img onClick={() => setShowMenu(true)} className='w-6 md:hidden' src={assets.menu_icon} alt=""/>
                 {/*-------Mobile Menu-------*/}

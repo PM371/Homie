@@ -15,8 +15,8 @@ const Barbers = () => {
         .catch(error => console.error('Error fetching barbers:', error));
   }, []);
   return (
-      <div className="p-5">
-        <p className="text-gray-600">Browse through the expert barbers.</p>
+      <div className="p-5 mb-20">
+        <p className="text-xl text-white">Browse through the expert barbers.</p>
 
         <div className="flex flex-col sm:flex-row items-start gap-5 mt-5">
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 pt-5 gap-y-6">

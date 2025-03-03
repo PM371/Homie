@@ -3,21 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: outfit;
+* {
+    font-family: 'Outfit', sans-serif;
+    @apply transition-colors duration-300; /* ทำให้การเปลี่ยนสีเนียนขึ้น */
 }
 
-.active hr{
-    @apply block
+/* เปลี่ยนสีพื้นหลังของทั้งเว็บเป็น #161F23 */
+body {
+    @apply bg-[#161F23] text-white; /* ตัวหนังสือเป็นสีขาว */
 }
 
-::-webkit-scrollbar{
-    @apply hidden
+/* Dark Mode (ถ้าต้องการให้มีโหมดสว่างให้เพิ่มเงื่อนไขนี้) */
+.dark body {
+    @apply bg-black text-white;
 }
 
+.active hr {
+    @apply block;
+}
 
-@media (max-width:740px) {
-    .active p{
-        @apply text-white bg-primary
+::-webkit-scrollbar {
+    @apply hidden;
+}
+
+@media (max-width: 740px) {
+    .active p {
+        @apply text-white bg-primary;
     }
 }

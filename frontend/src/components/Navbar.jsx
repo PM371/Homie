@@ -50,14 +50,14 @@ const Navbar = () => {
   return (
       <div>
         <div className='flex items-center justify-between text-sm py-2 mb-5 fixed top-0 left-30 right-40 z-50 mt-11'>
-          <div className="flex items-center justify-center text-sm py-1 mb-5 fixed top-0 left-[390px] right-[390px] z-50 bg-white bg-opacity-90 mt-12 mr-4 rounded-full">
+          <div className="flex items-center justify-center text-sm py-1 mb-5 fixed top-0 left-[480px] right-[480px] z-50 bg-white bg-opacity-90 mt-12 mr-4 rounded-full">
             <ul className="hidden md:flex items-center gap-10 font-medium">
               <NavLink
                   onClick={() => {
                     scrollToSection(homeRef);
                     handleLinkClick('home');
                   }}
-                  className={`flex flex-col items-center group ${activeLink === 'home' ? 'bg-primary text-white' : 'text-black'} rounded-full`}
+                  className={`flex flex-col items-center group ${activeLink === 'home' ? 'bg-[#7A98AB] text-white' : 'text-black'} rounded-full`}
               >
                 <li className="inline-flex py-4 px-8 transition duration-300 rounded-full">
                   HOME
@@ -69,10 +69,10 @@ const Navbar = () => {
                     scrollToSection(barbersRef);
                     handleLinkClick('barbers');
                   }}
-                  className={`flex flex-col items-center group ${activeLink === 'barbers' ? 'bg-primary text-white' : 'text-black'} rounded-full`}
+                  className={`flex flex-col items-center group ${activeLink === 'barbers' ? 'bg-[#7A98AB] text-white' : 'text-black'} rounded-full`}
               >
                 <li className="inline-flex py-4 px-8 transition duration-300 rounded-full">
-                  ALL BARBERS
+                  OUR HOUSES
                 </li>
               </NavLink>
 
@@ -81,10 +81,10 @@ const Navbar = () => {
                     scrollToSection(aboutRef);
                     handleLinkClick('about');
                   }}
-                  className={`flex flex-col items-center group ${activeLink === 'about' ? 'bg-primary text-white' : 'text-black'} rounded-full`}
+                  className={`flex flex-col items-center group ${activeLink === 'about' ? 'bg-[#7A98AB] text-white' : 'text-black'} rounded-full`}
               >
                 <li className="inline-flex py-4 px-8 transition duration-300 rounded-full">
-                  ABOUT
+                  ABOUT US
                 </li>
               </NavLink>
 
@@ -93,7 +93,7 @@ const Navbar = () => {
                     scrollToSection(contactRef);
                     handleLinkClick('contact');
                   }}
-                  className={`flex flex-col items-center group ${activeLink === 'contact' ? 'bg-primary text-white' : 'text-black'} rounded-full`}
+                  className={`flex flex-col items-center group ${activeLink === 'contact' ? 'bg-[#7A98AB] text-white' : 'text-black'} rounded-full`}
               >
                 <li className="inline-flex py-4 px-8 transition duration-300 rounded-full">
                   CONTACT
@@ -116,7 +116,7 @@ const Navbar = () => {
                       </div>
                     </div>
                   </div>
-                  : <button onClick={() => navigate('/signin')} className='border-2 bg-primary text-white font-semibold px-12 py-4 rounded-full font-light hidden md:block mr-[-30px]'>Login</button>
+                  : <button onClick={() => navigate('/signin')} className='border-2 bg-[#7A98AB] text-white font-semibold px-12 py-4 rounded-full font-light hidden md:block mr-[-30px]'>Login</button>
             }
             <img onClick={() => setShowMenu(true)} className='w-6 md:hidden' src={assets.menu_icon} alt=""/>
           </div>
@@ -125,8 +125,8 @@ const Navbar = () => {
         {/* Sections */}
         <div className="absolute" style={{ top: '0%' }} ref={homeRef} id="home-section"></div>
         <div className="absolute" style={{ top: '80%' }} ref={barbersRef} id="barbers-section"></div>
-        <div className="absolute" style={{ top: '180%' }} ref={aboutRef} id="about-section"></div>
-        <div className="absolute" style={{ top: '280%' }} ref={contactRef} id="contact-section"></div>
+        <div className="absolute" style={{ top: '160%' }} ref={aboutRef} id="about-section"></div>
+        <div className="absolute" style={{ top: '278%' }} ref={contactRef} id="contact-section"></div>
       </div>
   );
 };
