@@ -149,7 +149,7 @@ const Appointment = () => {
       let currentDate = new Date(today);
       currentDate.setDate(today.getDate() + i);
       let endTime = new Date(currentDate);
-      endTime.setHours(21, 0, 0, 0);
+      endTime.setHours(19, 0, 0, 0);
 
       if (today.getDate() === currentDate.getDate()) {
         currentDate.setHours(currentDate.getHours() > 10 ? currentDate.getHours() + 1 : 10);
@@ -174,7 +174,7 @@ const Appointment = () => {
           isBooked: isBooked
         });
 
-        currentDate.setMinutes(currentDate.getMinutes() + 30);
+        currentDate.setMinutes(currentDate.getMinutes() + 60);
       }
 
       slots.push(timeSlots);
@@ -253,7 +253,7 @@ const Appointment = () => {
                     onClick={() => !item.isBooked && setSlotTime(item.time)}
                     className={`text-sm font-light flex-shrink-0 px-5 py-2 rounded-full cursor-pointer 
         ${item.isBooked ? 'bg-gray-300 text-gray-500 cursor-not-allowed' :
-                        item.time === slotTime ? 'bg-primary text-white' : 'text-gray-400 border border-gray-300'}`}
+                        item.time === slotTime ? 'bg-white text-black' : 'bg-[#7A98AB] text-white'}`}
                     key={index}
                 >
                   {item.time.toLowerCase()}
