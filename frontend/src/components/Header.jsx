@@ -29,7 +29,7 @@ const Header = () => {
                 <p className="absolute text-[17px] text-[#ffffff]  leading-tight leading-[1.5]" style={{ transform: 'rotate(0deg)', top: '48%', left: '26%' }}>
                     Simply browse through our extensive list of skilled barbers,<br /> schedule your appointment hassle-free.
                 </p>
-                <a onClick={() => scrollToSection(barbersRef)} className="absolute flex items-center gap-2 bg-[#ffffff] text-[#000000] px-14 py-4 rounded-50 text-[16px] m-auto md:m-0 hover:bg-[#000000] hover:text-[#ffffff] hover:scale-105 transition-all duration-300 rounded-full" style={{ transform: 'rotate(0deg)', top: '59%', left: '26%' }}>
+                <a onClick={() => scrollToSection(barbersRef)} className="absolute flex items-center gap-2 bg-[#ffffff] text-[#000000] px-14 py-4 rounded-50 text-[16px] m-auto md:m-0 hover:bg-[#528EFF] hover:text-[#ffffff] hover:font-bold hover:scale-105 transition-all duration-300 rounded-full" style={{ transform: 'rotate(0deg)', top: '59%', left: '26%' }}>
                     Start Booking
                     <img className="w-3" src={assets.arrow_icon} alt="Arrow Icon" />
                 </a>

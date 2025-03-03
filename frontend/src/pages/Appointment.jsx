@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import {useNavigate, useParams} from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import Navbar from '../components/NavbarSub';
 import { assets } from '../assets/assets';
@@ -18,33 +18,34 @@ const Appointment = () => {
   const [appointment, setAppointment] = useState([]);
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(null);
-  const [bookedAppointments, setBookedAppointments]=useState([]);
+  const [bookedAppointments, setBookedAppointments] = useState([]);
   const [selectedService, setSelectedService] = useState(null);
   const [price, setPrice] = useState("Please select an offer");
   const [selectedOffer, setSelectedOffer] = useState(null);
+  const navigate = useNavigate();
 
 
   useEffect(() => {
     window.scrollTo(0, 0);
     fetch('http://localhost:8085/')
-        .then(response => response.json())
-        .then(data => {
-          setBarbers(data);
-        })
-        .catch(error => console.error('Error fetching barbers:', error));
+      .then(response => response.json())
+      .then(data => {
+        setBarbers(data);
+      })
+      .catch(error => console.error('Error fetching barbers:', error));
   }, []);
   useEffect(() => {
     fetch('http://localhost:8085/appointment')
-        .then(response => response.json())
-        .then(data => {
-          const appointments = data.map(appointment => ({
-            date: appointment.appointmentDate, // วันที่
-            time: appointment.appointmentTime, // เวลา
-            barber:appointment.barberId
-          }));
-          setBookedAppointments(appointments);
-        })
-        .catch(error => console.error('Error fetching appointment:', error));
+      .then(response => response.json())
+      .then(data => {
+        const appointments = data.map(appointment => ({
+          date: appointment.appointmentDate, // วันที่
+          time: appointment.appointmentTime, // เวลา
+          barber: appointment.barberId
+        }));
+        setBookedAppointments(appointments);
+      })
+      .catch(error => console.error('Error fetching appointment:', error));
   }, []);
 
 
@@ -77,8 +78,8 @@ const Appointment = () => {
   };
   const fetchAppointmentInfo = async () => {
     const appointmentInfo = bookedAppointments
-        .filter(bookedAppointment => bookedAppointment.barber === docId)
-        .map(({ date, time }) => ({ date, time }));
+      .filter(bookedAppointment => bookedAppointment.barber === docId)
+      .map(({ date, time }) => ({ date, time }));
     setAppointment(appointmentInfo);
 
   };
@@ -95,7 +96,7 @@ const Appointment = () => {
     if (!slotTime) {
       alert("Please choose an appointment time!");
       return;
-    }if (!selectedOffer) {
+    } if (!selectedOffer) {
       alert("Please choose an offer!");
       return;
     }
@@ -126,7 +127,7 @@ const Appointment = () => {
       });
 
       if (response.status === 200 || response.status === 201) {
-        alert("Appointment booked successfully!"+appointmentDate);
+        alert("Appointment booked successfully!" + appointmentDate);
         const newAppointment = { date: selectedDate.toISOString().split('T')[0], time: `${String(selectedDate.getHours()).padStart(2, '0')}:${String(selectedDate.getMinutes()).padStart(2, '0')}`, barber: docId };
         updateSlotStatus([newAppointment]);
       } else {
@@ -163,9 +164,9 @@ const Appointment = () => {
         let formattedTime = currentDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
         const isBooked = bookedAppointments.some(
-            appointment =>
-                appointment.date === currentDate.toISOString().split('T')[0] &&
-                appointment.time === formattedTime
+          appointment =>
+            appointment.date === currentDate.toISOString().split('T')[0] &&
+            appointment.time === formattedTime
         );
 
         timeSlots.push({
@@ -189,9 +190,9 @@ const Appointment = () => {
 
       appointments.forEach(appointment => {
         const dayIndex = updatedSlots.findIndex(daySlots =>
-            daySlots.some(slot =>
-                slot.dateTime.toISOString().split('T')[0] === appointment.date
-            )
+          daySlots.some(slot =>
+            slot.dateTime.toISOString().split('T')[0] === appointment.date
+          )
         );
 
         if (dayIndex !== -1) {
@@ -210,68 +211,68 @@ const Appointment = () => {
 
 
   return barbers && (
-      <div className='md:mx-10 '>
-        <Navbar />
-        <div className='flex flex-col sm:flex-row gap-4'>
-          <div>
-            <img className='w-60 h-60 object-cover bg-blue-50 rounded-lg'
-                 src={`http://localhost:8085/picture/${barbers.profilePicture}`} alt="" />
-          </div>
-          <div className='flex-1 border border-gray-400 rounded-lg p-8 py-7 bg-[#7A98AB] mx-2 sm:mx-0 mt-[-0px] sm:mx-0'>
-            <p className='flex items-center gap-2 text-2xl font-medium text-white'>
-              {barbers.name}
-              <img className='w-5' src={assets.verified_icon} alt="" />
-            </p>
-            <p className='text-white font-medium mt-4'>
-              About: <span className='text-white'>{price} baht</span>{/*docInfo.fees*/}
-            </p>
-            <p className='text-white font-medium mt-4'>
-              Location: <span className='text-white'>{price} baht</span>{/*docInfo.fees*/}
-            </p>
-            <p className='text-white font-medium mt-4'>
-              Price: <span className='text-white'>{price} baht</span>{/*docInfo.fees*/}
-            </p>
-          </div>
+    <div className='md:mx-10 '>
+      <Navbar />
+      <div className='flex flex-col sm:flex-row gap-4'>
+        <div>
+          <img className='w-60 h-60 object-cover bg-blue-50 rounded-lg'
+            src={`http://localhost:8085/picture/${barbers.profilePicture}`} alt="" />
         </div>
-        
+        <div className='flex-1 border border-gray-400 rounded-lg p-8 py-7 bg-[#7A98AB] mx-2 sm:mx-0 mt-[-0px] sm:mx-0'>
+          <p className='flex items-center gap-2 text-2xl font-medium text-white'>
+            {barbers.name}
+            <img className='w-5' src={assets.verified_icon} alt="" />
+          </p>
+          <p className='text-white font-medium mt-4 text-lg'>
+            About: <span className='text-white'>{price} baht</span>{/*docInfo.fees*/}
+          </p>
+          <p className='text-white font-medium mt-4 text-lg'>
+            Location: <span className='text-white'>{price} baht</span>{/*docInfo.fees*/}
+          </p>
+          <p className='text-white font-medium mt-4 text-lg'>
+            Price: <span className='text-white'>{price} baht</span>{/*docInfo.fees*/}
+          </p>
+        </div>
+      </div>
 
-        {/*-------Booking Slots-------*/}
+
+      {/*-------Booking Slots-------*/}
         <div className="ml-[30%] mt-[4%] mt-4 font-medium text-white">
-          <p font-bold>Booking slots</p>
+          <p className='font-bold text-lg'>Booking slots</p>
           <div className='flex gap-3 items-center w-full overflow-x-scroll mt-4'>
             {docSlots.length > 0 && docSlots.map((item, index) => (
-                <div onClick={() => setSlotIndex(index)} className={`text-center py-5 min-w-16 rounded-full cursor-pointer ${slotIndex === index ? 'bg-white text-black font-bold' : 'bg-[#7A98AB]'}`} key={index}>
-                  <p>{item[0] && daysOfWeek[item[0].dateTime.getDay()]}</p>
-                  <p>{item[0] && item[0].dateTime.getDate()}</p>
-                </div>
+              <div onClick={() => setSlotIndex(index)} className={`text-center py-5 min-w-16 rounded-full cursor-pointer ${slotIndex === index ? 'bg-white text-black font-bold' : 'bg-[#7A98AB]'}`} key={index}>
+                <p>{item[0] && daysOfWeek[item[0].dateTime.getDay()]}</p>
+                <p>{item[0] && item[0].dateTime.getDate()}</p>
+              </div>
             ))}
           </div>
 
           <div className='flex items-center gap-3 w-full overflow-x-scroll mt-4'>
             {docSlots.length > 0 && docSlots[slotIndex]?.map((item, index) => (
-                <p
-                    onClick={() => !item.isBooked && setSlotTime(item.time)}
-                    className={`text-sm font-light flex-shrink-0 px-5 py-2 rounded-full cursor-pointer 
+              <p
+                onClick={() => !item.isBooked && setSlotTime(item.time)}
+                className={`text-sm font-light flex-shrink-0 px-5 py-2 rounded-full cursor-pointer 
         ${item.isBooked ? 'bg-gray-300 text-gray-500 cursor-not-allowed' :
-                        item.time === slotTime ? 'bg-white text-black' : 'bg-[#7A98AB] text-white'}`}
-                    key={index}
-                >
-                  {item.time.toLowerCase()}
-                </p>
+                    item.time === slotTime ? 'bg-white text-black' : 'bg-[#7A98AB] text-white'}`}
+                key={index}
+              >
+                {item.time.toLowerCase()}
+              </p>
             ))}
           </div>
           <div className='flex items-center gap-5 w-full overflow-x-scroll mt-4'>
-          <button className='bg-[#528EFF] text-white text-m font-bold px-7 py-3 rounded-full my-6' onClick={bookAppointment}>
-            Book an Appointment
-          </button>
-          <button className='bg-[#BDD4FF] text-white text-m font-bold px-7 py-3 rounded-full my-6'>
-            Back
-          </button>
+            <button className='bg-[#528EFF] text-white text-m font-bold px-7 py-3 rounded-full my-6' onClick={bookAppointment}>
+              Book Now
+            </button>
+            <button className='bg-[#BDD4FF] text-white text-m font-bold px-7 py-3 rounded-full my-6' onClick={() => navigate('/')}>
+              Back
+            </button>
           </div>
 
         </div>
-        {/*-------Listing Barbers-------*/}
-      </div>
+      {/*-------Listing Barbers-------*/}
+    </div>
   );
 };
 
