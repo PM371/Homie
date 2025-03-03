@@ -64,7 +64,7 @@ const Auth = () => {
       <div className='mx-4 sm:mx-[10%] mt-5'>
         <Navbar />
       <form
-          className="min-h-[80vh] flex items-center"
+          className="min-h-[70vh] flex items-center"
           onSubmit={state === "Sign Up" ? handleSignup : handleLogin}
       >
 
