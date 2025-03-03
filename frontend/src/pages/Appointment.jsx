@@ -238,7 +238,7 @@ const Appointment = () => {
 
       {/*-------Booking Slots-------*/}
         <div className="ml-[30%] mt-[4%] mt-4 font-medium text-white">
-          <p className='font-bold text-lg'>Booking slots</p>
+          <p className='font-bold text-lg mb-10'>Booking slots</p>
           <div className='flex gap-3 items-center w-full overflow-x-scroll mt-4'>
             {docSlots.length > 0 && docSlots.map((item, index) => (
               <div onClick={() => setSlotIndex(index)} className={`text-center py-5 min-w-16 rounded-full cursor-pointer ${slotIndex === index ? 'bg-white text-black font-bold' : 'bg-[#7A98AB]'}`} key={index}>
@@ -248,19 +248,6 @@ const Appointment = () => {
             ))}
           </div>
 
-          <div className='flex items-center gap-3 w-full overflow-x-scroll mt-4'>
-            {docSlots.length > 0 && docSlots[slotIndex]?.map((item, index) => (
-              <p
-                onClick={() => !item.isBooked && setSlotTime(item.time)}
-                className={`text-sm font-light flex-shrink-0 px-5 py-2 rounded-full cursor-pointer 
-        ${item.isBooked ? 'bg-gray-300 text-gray-500 cursor-not-allowed' :
-                    item.time === slotTime ? 'bg-white text-black' : 'bg-[#7A98AB] text-white'}`}
-                key={index}
-              >
-                {item.time.toLowerCase()}
-              </p>
-            ))}
-          </div>
           <div className='flex items-center gap-5 w-full overflow-x-scroll mt-4'>
             <button className='bg-[#528EFF] text-white text-m font-bold px-7 py-3 rounded-full my-6' onClick={bookAppointment}>
               Book Now
