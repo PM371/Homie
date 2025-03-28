@@ -29,8 +29,8 @@ const MyAppointments = () => {
                     const fetchedAppointments = data
                         .filter(appointment => appointment.username === user)
                         .map(appointment => ({
-                            date: appointment.appointmentDate,
-                            time: appointment.appointmentTime,
+                            date: appointment.appointment_date,
+                            // time: appointment.appointmentTime,
                             stylistClass: appointment.barberClass,
                             name: appointment.username,
                             barberName: appointment.barberName,
@@ -55,7 +55,7 @@ const MyAppointments = () => {
                 { status: 'paid' },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
-            
+
             setPaidAppointments([...paidAppointments, appointmentId]);
             setShowPopup(true);
         } catch (error) {
@@ -75,11 +75,11 @@ const MyAppointments = () => {
                     <div className='flex-1 text-sm text-zinc-600'>
                         <p className='text-neutral-800 font-semibold'>{appointment.barberName}</p>
                         <p className='text-xs mt-1'>
-                            <span className='text-sm text-neutral-700 font-medium'>Date & Time:</span> {appointment.date} | {appointment.time}
+                            <span className='text-sm text-neutral-700 font-medium'>Date :</span> {appointment.date}
                         </p>
                         {paidAppointments.includes(appointment.id) || appointment.status === 'paid' ? (
-                            <span className='text-sm text-green-600 font-semibold mt-2 block'>PAID</span> // เพิ่ม mt-2 และ block
-                        ) :
+                                <span className='text-sm text-green-600 font-semibold mt-2 block'>PAID</span> // เพิ่ม mt-2 และ block
+                            ) :
                             <span className='text-sm text-red-600 font-semibold mt-2 block'>UNPAID</span>}
                     </div>
                     <div className='flex flex-col gap-2 justify-center items-center h-full '>

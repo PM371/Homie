@@ -14,13 +14,13 @@ const Header = () => {
     return (
         <div className="flex justify-center" style={{ backgroundColor: '#161F23', width: '100vw', height: '105vh' }}>
             <div className="flex justify-center mt-9 ml-[170px]">
-                <p className="absolute text-[60px] text-white flex gap-2 font-bold leading-tight top-[10%] left-[10%] -translate-x-1/2 -translate-y-1/2">
-                    Homie <HiHome size={55} color="white" />
+                <p className="absolute text-[60px] text-[#ffffff] flex gap-2 font-bold leading-tight top-[10%] left-[10%] -translate-x-1/2 -translate-y-1/2">
+                    Homie <HiHome size={55} color="white" className="mt-2" />
                 </p>
-                <p className="absolute text-[18px] text-[#ffffff] font-bold leading-tight" style={{ transform: 'rotate(0deg)', top: '75%', left: '3%' }}>
+                <p className="absolute text-[18px] text-[#ffffff] font-bold leading-tight" style={{ transform: 'rotate(0deg)', top: '85%', left: '3%' }}>
                     FOLLOW US
                 </p>
-                <p className="absolute text-[15px] text-[#ffffff] leading-tight leading-[1.5]" style={{ transform: 'rotate(0deg)', top: '80%', left: '3%' }}>
+                <p className="absolute text-[15px] text-[#ffffff] leading-tight leading-[1.5]" style={{ transform: 'rotate(0deg)', top: '90%', left: '3%' }}>
                     Connect with us and let's elevate your <br /> grooming game. Your journey to <br />a better-looking you starts here.
                 </p>
                 <p className="absolute text-[60px] text-[#ffffff] font-bold leading-tight" style={{ transform: 'rotate(0deg)', top: '28%', left: '26%' }}>

@@ -7,13 +7,13 @@ const Footer = () => {
 
                 {/*-------Left Section-------*/}
                 <div>
-                    <p className='mb-4 w-40 text-3xl font-medium text-white'>Homie :)</p>
+                    <p className='mb-4 w-40 text-3xl font-medium text-black'>Homie :)</p>
                     <p>At Homie, our vision is to create a seamless grooming experience for every customer. We aim to bridge the gap between clients and professional barbers, making it easier for you to access the style and care you need, when you need it.</p>
                 </div>
                 {/*-------center Section-------*/}
                 <div>
                     <p className='text-xl font-medium mb-5'>COMPANY</p>
-                    <ul className='flex flex-col gap-2 text-white'>
+                    <ul className='flex flex-col gap-2 text-black'>
                         <li>Home</li>
                         <li>About us</li>
                         <li>Contact us</li>
@@ -23,7 +23,7 @@ const Footer = () => {
                 {/*-------Right Section-------*/}
                 <div>
                     <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
-                    <ul className='flex flex-col gap-2 text-white'>
+                    <ul className='flex flex-col gap-2 text-black'>
                         <li>02-555-5555</li>
                         <li>homie@gmail.com</li>
                     </ul>

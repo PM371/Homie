@@ -30,7 +30,7 @@ const NavbarSub = () => {
 
     return (
         <div className='flex items-center justify-between text-sm py-4 mb-5'>
-            <p onClick={() => navigate('/')} className='w-44 cursor-pointer text-5xl font-semibold text-white flex items-center gap-2'>Homie <HiHome size={40} color="white" /></p>
+            <p onClick={() => navigate('/')} className='w-44 cursor-pointer text-5xl font-semibold text-black flex items-center gap-2'>Homie <HiHome size={55} color="black" className="mt-2"/></p>
             <ul className='hidden md:flex items-start gap-10 font-medium'>
                 <NavLink to='/'>
                     <li className='py-1 font-bold'>HOME</li>

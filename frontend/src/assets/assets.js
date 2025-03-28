@@ -30,6 +30,7 @@ import doc12 from './barber12.jpg'
 import doc13 from './barber13.jpg'
 import doc14 from './barber14.jpg'
 import doc15 from './barber15.jpg'
+import more_pic from './more_pic.png'
 
 export const assets = {
     appointment_img,
@@ -48,7 +49,8 @@ export const assets = {
     dropdown_icon,
     upload_icon,
     stripe_logo,
-    razorpay_logo
+    razorpay_logo,
+    more_pic
 }
 
 

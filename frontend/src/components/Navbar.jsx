@@ -49,8 +49,8 @@ const Navbar = () => {
 
   return (
       <div>
-        <div className='flex items-center justify-between text-sm py-2 mb-5 fixed top-0 left-30 right-40 z-50 mt-11'>
-          <div className="flex items-center justify-center text-sm py-1 mb-5 fixed top-0 left-[480px] right-[480px] z-50 bg-white bg-opacity-90 mt-12 mr-4 rounded-full">
+        <div className='flex items-center justify-between text-sm py-2 mb-5 fixed top-0 left-25 right-24 z-50 mt-11'>
+          <div className="w-[700px] flex items-center justify-center text-sm py-1 mb-5 fixed top-0 left-[350px] right-[480px] z-50 bg-white bg-opacity-90 mt-12 mr-4 rounded-full">
             <ul className="hidden md:flex items-center gap-10 font-medium">
               <NavLink
                   onClick={() => {
@@ -112,6 +112,7 @@ const Navbar = () => {
                     <div className='absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block'>
                       <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
                         <p onClick={() => navigate('my-appointments')} className='hover:text-black cursor-pointer'>My Appointments</p>
+                        <p onClick={() => window.location.href = "http://localhost:5174/admin-dashboard"} className='hover:text-black cursor-pointer'>Your home</p>
                         <p onClick={handleLogout} className='hover:text-black cursor-pointer'>Logout</p>
                       </div>
                     </div>
@@ -124,8 +125,8 @@ const Navbar = () => {
 
         {/* Sections */}
         <div className="absolute" style={{ top: '0%' }} ref={homeRef} id="home-section"></div>
-        <div className="absolute" style={{ top: '80%' }} ref={barbersRef} id="barbers-section"></div>
-        <div className="absolute" style={{ top: '160%' }} ref={aboutRef} id="about-section"></div>
+        <div className="absolute" style={{ top: '90%' }} ref={barbersRef} id="barbers-section"></div>
+        <div className="absolute" style={{ top: '220%' }} ref={aboutRef} id="about-section"></div>
         <div className="absolute" style={{ top: '278%' }} ref={contactRef} id="contact-section"></div>
       </div>
   );

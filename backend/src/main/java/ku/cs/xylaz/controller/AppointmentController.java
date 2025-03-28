@@ -61,13 +61,13 @@ public class AppointmentController {
                     Map<String, Object> appointmentData = new HashMap<>();
                     String appointmentDateTime = appointment.getAppointmentDate();
 
-                    String[] dateTimeParts = appointmentDateTime.split(" ");
-                    String date = dateTimeParts[0];
-                    String time = dateTimeParts[1];
+//                    String[] dateTimeParts = appointmentDateTime.split(" ");
+//                    String date = dateTimeParts[0];
+//                    String time = dateTimeParts[1];
 
-                    appointmentData.put("appointmentDate", date);
+//                    appointmentData.put("appointmentDate", date);
                     appointmentData.put("id", appointment.getId().toString());
-                    appointmentData.put("appointmentTime", time);
+//                    appointmentData.put("appointmentTime", time);
                     appointmentData.put("barberId", appointment.getBarber().getId());
                     appointmentData.put("barberProfilePicture", appointment.getBarber().getProfilePicture());
                     appointmentData.put("barberName", appointment.getBarber().getName());

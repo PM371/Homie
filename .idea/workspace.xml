@@ -5,24 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfcf7cca-3d76-465e-a4aa-3bf45338cf5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/db/picture/barber10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/picture/barber15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/NavbarSub.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Homie.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/picture/banner_pic_old.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/more_pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Xylaz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Xylaz.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/pages/AllAppointment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/AllAppointment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/pages/BarberSalary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/BarberSalary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/pages/AddBarber.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/AddBarber.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/ku/cs/xylaz/controller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ku/cs/xylaz/controller/AppointmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ku/cs/xylaz/entity/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ku/cs/xylaz/entity/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ku/cs/xylaz/request/AppointmentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ku/cs/xylaz/request/AppointmentRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ku/cs/xylaz/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ku/cs/xylaz/service/AppointmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/picture/banner_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/db/picture/banner_pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/picture/barber.5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/db/picture/barber.5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/picture/barber10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/db/picture/barber10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/picture/barber15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/db/picture/barber15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/picture/barber4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/db/picture/barber4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/picture/barber6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/picture/barber7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/db/picture/barber7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/picture/barber8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/db/picture/barber8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/picture/four.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/db/picture/four.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/about_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/about_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/assets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/assets_admin/assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/assets_admin/assets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/prototype.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavbarSub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavbarSub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Appointment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Appointment.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Auth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Auth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Barbers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Barbers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Contact.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/MyAppointments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/MyAppointments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Receipt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Receipt.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,30 +74,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/cactus/Desktop/Xylaz/db/picture&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;e1ca045e23e5792d8ba25dee26690ef7&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/cactus/Desktop/Homie",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "e1ca045e23e5792d8ba25dee26690ef7",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/db/picture" />
       <recent name="$PROJECT_DIR$/frontend/src/picture" />
       <recent name="$PROJECT_DIR$/frontend/src/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/db/picture" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/assets_admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,6 +125,7 @@
       <updated>1730750687631</updated>
       <workItem from="1730750689037" duration="3745000" />
       <workItem from="1731052255527" duration="67771000" />
+      <workItem from="1743075037838" duration="55684000" />
     </task>
     <servers />
   </component>
